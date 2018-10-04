@@ -1,0 +1,38 @@
+{
+  "name": "react-build",
+  "version": "0.1.0",
+  "description": "Carpeta para desarrollo de proyectos en REACT",
+  "main": "./src/app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IamBeltran/react-build.git"
+  },
+  "keywords": [
+    "REACT",
+    "BUILD",
+    "JAVASCRIPT",
+    "REDUX"
+  ],
+  "author": "Victor Giovanni Beltrán Rodriguez <beltran-victor@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IamBeltran/react-build/issues"
+  },
+  "homepage": "https://github.com/IamBeltran/react-build#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "json-server": "^0.14.0"
+  }
+}
