@@ -1,0 +1,7 @@
+{
+    "port": 3001,
+    "watch": true,
+    "host": "localhost",
+    "routes": "./jsonserver/json-server-routes.json",
+    "snapshots": "./jsonserver/snapshots"
+}

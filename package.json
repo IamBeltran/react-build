@@ -2,8 +2,12 @@
   "name": "react-build",
   "version": "0.1.0",
   "description": "Carpeta para desarrollo de proyectos en REACT",
+  "directories": {
+    "test": "test"
+  },
   "main": "./src/app/index.js",
   "scripts": {
+    "jsonserver":"json-server -c ./jsonserver/json-server.json ./jsonserver/json-server-data.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

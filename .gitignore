@@ -39,6 +39,9 @@ jspm_packages/
 # Notes of proyect
 NOTAS/
 
+#snapshots
+jsonserver/snapshots/
+
 # Test of proyect
 Test/
 
