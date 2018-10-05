@@ -42,9 +42,6 @@ NOTAS/
 #snapshots
 jsonserver/snapshots/
 
-# Test of proyect
-Test/
-
 # Typescript v1 declaration files
 typings/
 
