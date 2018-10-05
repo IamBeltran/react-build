@@ -1,6 +1,8 @@
-![Express Logo](Logo.png)
+![Express Logo]()
 
 # SCAFFOLDING PARA REACT
+
+![React Logo](docs/Logo.png)
 
 Repositorio con un Scaffolding para desplegar un servidor de prueba para el desarrollo de aplicaciones en React.
 

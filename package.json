@@ -9,7 +9,10 @@
   "scripts": {
     "dev-start": "webpack-dev-server — mode development — open — hot",
     "build": "webpack — mode production",
+    "echo-hello":"echo \"Hola\"",
+    "echo-world":"echo \"Mundo\"",
     "jsonserver": "json-server -c ./jsonserver/json-server.json ./jsonserver/json-server-data.json",
+    "concurrently": "node concurrently.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
