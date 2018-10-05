@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Carpeta para desarrollo de proyectos en REACT",
   "directories": {
-    "test": "test"
+    "test": "test",
+    "docs": "docs"
   },
   "main": "./src/app/index.js",
   "scripts": {
