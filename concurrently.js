@@ -5,7 +5,7 @@
 	function failure(){console.log(':(')};
 	
 	concurrently([
-		'npm:echo-*', 
+		'npm:build-*', 
 			{
 				command: 'nodemon',
 				name: 'DEVELOPMENT',

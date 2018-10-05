@@ -1,30 +1,22 @@
 const path = require('path');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './src/app/index.js',
-  output: {
-    path: path.resolve(__dirname, './src/public_html/assets/js/'),
-    filename: 'bundle.js'
+  mode: "development",
+  entry: {
+    app: './src/index.js',
+    print: './src/print.js'
   },
-  module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: ['babel-loader']
-        }
-      },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      },
-      {
-        test: /\.sass$/,
-        use: ['style-loader', 'sass-loader']
-      }
-    ]
+  devtool: 'inline-source-map',
+  plugins: [
+    //new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
+      title: 'Development'
+    })
+  ],
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist')
   }
 };
