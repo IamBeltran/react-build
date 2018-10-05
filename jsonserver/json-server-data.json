@@ -1,11 +1,54 @@
 {
   "products": [
-    { "id": 1, "name": "Hipster Ultimate", "description":"T-SHIRT Grey color", "price": 300, "stock": 10, "image": "https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" },
-    { "id": 2, "name": "On Motion Live",   "description":"T-SHIRT Green color", "price": 100,  "stock": 30, "image": "https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-2.jpg" },
-    { "id": 3, "name": "Underground Max",  "description":"T-SHIRT Blue color", "price": 200, "stock": 50, "image": "https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-3.jpg" }
+    {
+      "id": 1,
+      "name": "Hipster Ultimate",
+      "description": "T-SHIRT Grey color",
+      "price": 300,
+      "stock": 10,
+      "image": "https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "On Motion Live",
+      "description": "T-SHIRT Green color",
+      "price": 100,
+      "stock": 30,
+      "image": "https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Underground Max",
+      "description": "T-SHIRT Blue color",
+      "price": 200,
+      "stock": 50,
+      "image": "https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-3.jpg"
+    }
   ],
-  "users":[
-    { "id": 1, "name": "Victor Beltrán Rodríguez", "nickname":"bowie", "pass": "Mabel560", "role": "supervisor", "level": 31},
-    { "id": 2, "name": "Paulina Beltrán Rodríguez", "nickname":"luna", "pass": "Mabel560", "role": "administrator", "level": 15 }
+  "users": [
+    {
+      "id": 1,
+      "name": "Victor Beltrán Rodríguez",
+      "nickname": "bowie",
+      "pass": "$2a$10$R3OTxe0orgX1DsWXuEkNh.kqi1i2W7cIT1AKfTABdANOhHkAkTPyW",
+      "role": "supervisor",
+      "level": 31
+    },
+    {
+      "id": 2,
+      "name": "Paulina Beltrán Rodríguez",
+      "nickname": "luna",
+      "pass": "$2a$10$R3OTxe0orgX1DsWXuEkNh.kqi1i2W7cIT1AKfTABdANOhHkAkTPyW",
+      "role": "administrator",
+      "level": 15
+    },
+    {
+      "id": 3,
+      "name": "Ruben Beltrán Villalobos",
+      "nickname": "rufo",
+      "pass": "$2a$10$R3OTxe0orgX1DsWXuEkNh.kqi1i2W7cIT1AKfTABdANOhHkAkTPyW",
+      "role": "administrator",
+      "level": 15
+    }
   ]
 }

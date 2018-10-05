@@ -73,3 +73,5 @@ https://github.com/typicode/json-server
 - [x] Agregar archivo de configuración para json server
 - [ ] Agregar archivo de configuración para concurrently
 - [ ] Agregar dos archivos de configuración para webpack para 
+
+https://webpack.js.org/configuration/#use-different-config-file
