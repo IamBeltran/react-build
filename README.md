@@ -2,9 +2,9 @@
 
 ![React Logo](docs/Logo.png)
 
-Repositorio con un Scaffolding para desplegar un servidor de prueba para el desarrollo de aplicaciones en React.
+Repositorio con un Scaffolding para desplegar un servidor de prueba, para el desarrollo de aplicaciones en React.
 
-## Documentacion de json server
+## Documentación de json server
 
 [git json server](https://github.com/typicode/json-server)
 
@@ -71,7 +71,9 @@ https://github.com/typicode/json-server
 ## To do List
 
 - [x] Agregar archivo de configuración para json server
-- [ ] Agregar archivo de configuración para concurrently
-- [ ] Agregar dos archivos de configuración para webpack para 
+- [x] Agregar archivo de configuración para concurrently
+- [x] Agregar dos archivos de configuración para webpack
+	- [x] Webpack entorno de produccion
+	- [x] Webpack entorno de desarrollo
 
 https://webpack.js.org/configuration/#use-different-config-file
