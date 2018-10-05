@@ -1,5 +1,3 @@
-![Express Logo]()
-
 # SCAFFOLDING PARA REACT
 
 ![React Logo](docs/Logo.png)
