@@ -9,7 +9,7 @@
   "main": "./src/app/index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "start:prod": "set NODE_ENV=production&& node concurrently.js",
+    "start:prod": "set NODE_ENV=production& node concurrently.js",
     "start:dev": "set NODE_ENV=development&  node concurrently.js",
     "dev-start": "webpack-dev-server — mode development — open — hot",
     "builddddd": "webpack — mode production",
