@@ -5,11 +5,9 @@ require("babel-register");
 
 module.exports = { 
   mode: "development",
-  entry: [
-    './src/app/index.js'
-  ],
+  entry: './src/app/index.js',
   output: {
-    path: path.resolve(__dirname, './src/public_html/assets/js/'),
+    path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
   },
   module: {
@@ -37,12 +35,6 @@ module.exports = {
       }
     ],
   },
-  devtool: 'inline-source-map',
-  devServer: {
-    open: true,
-    compress: true,
-    port: 9000
-  },
   watch: true,
   watchOptions: {
     aggregateTimeout: 300,
@@ -51,12 +43,20 @@ module.exports = {
       'node_modules'
     ]
   },
+  devtool: 'inline-source-map',
+  devServer: {
+    open: true,
+    compress: true,
+    port: 9000
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Development',
+      filename: 'index.html',
       template: path.resolve(__dirname,'./dist/index.html'),
       inject: 'body',
-      hash: true
+      hash: true,
+      showErrors: true
     })
   ],
 }

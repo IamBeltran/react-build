@@ -1,17 +1,36 @@
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
 //	│	IMPORT REACT MODULE DEPENDENCIES.												│
 //	└───────────────────────────────────────────────────────────────────────────────────┘
-	import React from 'react';
-	import { render } from 'react-dom';
-
+    import React, { Component } from 'react';
+//	import PropTypes from 'prop-types';
+	
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
 //	│	IMPORT REACT COMPONENT.															│
 //	└───────────────────────────────────────────────────────────────────────────────────┘
-	const App = require('./components/App');
+//	import './css/Content.css';
 
-//	──[ RENDER App ]─────────────────────────────────────────────────────────────────────
-	render(
-		<App />,
-		//<div>HOla</div>,
-		document.getElementById('app')
-	);
+//	──[	COMPONENT Footer ]───────────────────────────────────────────────────────────────
+	class Simple extends Component {
+		static  propTypes = {
+			children: PropTypes.object.isRequired,
+		};
+		
+		constructor(props){
+			super(props);
+			this.state = {}
+
+		}
+		
+		componentDidMount(){}
+	
+		render() {
+			return (
+				<div className="simple">
+					<h1 className="App-title">Soy el contenido</h1>
+				</div>
+			);
+		}
+	};
+
+//	──[	EXPORT Footer ]──────────────────────────────────────────────────────────────────
+	export default Simple;
