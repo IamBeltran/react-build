@@ -24,52 +24,48 @@ se cuenta con una constante `conmmands` que es un array que contiene todos los p
 
 ```json
   {
-      //...
       "scripts": {
-          // ...
           "comando-1": "node script_01.js",
           "comando-2": "node script_02.js",
           "comando-3": "node script_02.js",
           "paquete-1": "cli_paquete_1 archivo_de_configuracion_script.js",
           "paquete-2": "cli_paquete_2 archivo_de_configuracion_script.js",
-          // ...
       },
-      // ...
   }
 ```
 
-#### CONCURRENTLY.JS
+CONCURRENTLY.JS
 
 ```javascript
     // 0
     {
-			command:	'node script_01.js',
-			name:		'comando-1',
-			prefixColor:'green'
+      command: 'node script_01.js',
+      name: 'comando-1',
+      prefixColor:'green'
     },
     // 1
     {
-			command:	'node script_02.js',
-			name:		'comando-2',
-			prefixColor:'green'
+      command: 'node script_02.js',
+      name: 'comando-2',
+      prefixColor:'green'
     },
     // 2
     {
-			command:	'node script_03.js',
-			name:		'comando-3',
-			prefixColor:'green'
+      command: 'node script_03.js',
+      name: 'comando-3',
+      prefixColor:'green'
     },
     // 2
     {
-			command:	'cli_paquete_1 archivo_de_configuracion_script.js',
-			name:		'paquete-1',
-			prefixColor:'green'
+      command: 'cli_paquete_1 archivo_de_configuracion_script.js',
+      name: 'paquete-1',
+      prefixColor:'green'
     },
     // 3
     {
-			command:	'cli_paquete_1 archivo_de_configuracion_script.js',
-			name:		'paquete-1',
-			prefixColor:'green'
+      command: 'cli_paquete_1 archivo_de_configuracion_script.js',
+      name: 'paquete-1',
+      prefixColor:'green'
     }, 
 ```
 
@@ -85,8 +81,8 @@ se cuenta con una constante `conmmands` que es un array que contiene todos los p
   - [ ] Archivo `.js` de configuración para desplegar un servidor mas robusto para el uso de middelwares y algunas caracteristicas como JWT, o encryptamiento de caracteres.
 - [x] Agregar archivo de configuración para concurrently
 - [x] Agregar dos archivos de configuración para webpack
-	- [x] Webpack entorno de produccion
-	- [x] Webpack entorno de desarrollo
+  - [x] Webpack entorno de produccion
+  - [x] Webpack entorno de desarrollo
 
 ## Documentación
 
