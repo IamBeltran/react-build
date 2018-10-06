@@ -12,6 +12,5 @@
 //	──[ RENDER App ]─────────────────────────────────────────────────────────────────────
 	render(
 		<App />,
-		//<div>HOla</div>,
 		document.getElementById('app')
 	);

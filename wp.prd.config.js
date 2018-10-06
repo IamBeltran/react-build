@@ -8,7 +8,7 @@ const path = require('path');
       './src/app/index.js'
     ],
     output: {
-      path: __dirname + '/src/public_html/assets/js',
+      path: path.resolve(__dirname,'./src/public_html/assets/js/'),
       filename: 'bundle.js'
     },
     module: {
