@@ -1,10 +1,10 @@
 const path = require('path');
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+require("babel-register");
 
 module.exports = { 
   mode: "development",
-  watch: true,
   entry: [
     './src/app/index.js'
   ],
@@ -12,18 +12,51 @@ module.exports = {
     path: path.resolve(__dirname, './src/public_html/assets/js/'),
     filename: 'bundle.js',
   },
+  module: {
+    rules : [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: [
+          'babel-loader'
+        ]
+      },
+      {
+        test: /\.jsx$/,
+        exclude: /node_modules/,
+        use: [
+          'babel-loader'
+        ]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      }
+    ],
+  },
   devtool: 'inline-source-map',
   devServer: {
     open: true,
     compress: true,
-    port: 9000,
-    color: true,
-    
+    port: 9000
+  },
+  watch: true,
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000,
+    ignored: [
+      'node_modules'
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Development',
-      template: path.resolve(__dirname,'./dist/index.html')
+      template: path.resolve(__dirname,'./dist/index.html'),
+      inject: 'body',
+      hash: true
     })
   ],
 }
