@@ -18,7 +18,9 @@ npm install -g concurrently
 
 Se tiene un archivo de configuracion para el uso de este modulo `concurrently.js` el cual tiene una configuracion sencilla.
 
-se cuenta con una constante `conmmands` que es un array que contiene todos los posibles comandos que se puedan usar en el proyecto, se pueden agregar mas comandos para su futuro uso, es importante mencionar que se deben poner como se pondrian en la seccion de `package.json`.
+Se cuenta con una constante `conmmands` tipo array que contiene todos los posibles comandos en forma de objeto que se puedan usar en el proyecto, se pueden agregar mas comandos al array para su futuro uso, es importante mencionar que se deben escribir como se pondrian en la seccion de `package.json`.
+
+
 
 #### PACKAGE.JSON
 
@@ -34,7 +36,7 @@ se cuenta con una constante `conmmands` que es un array que contiene todos los p
   }
 ```
 
-CONCURRENTLY.JS
+#### CONCURRENTLY.JS
 
 ```javascript
     // 0
@@ -68,6 +70,8 @@ CONCURRENTLY.JS
       prefixColor:'green'
     }, 
 ```
+
+Otra constante es `TASK` de tipo `objeto`, es donde se encuentran las combinaciones que se usaran en `concurrently` dependiendo de que tareas se desea correr.
 
 ### Servidor
 
