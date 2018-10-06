@@ -7,23 +7,19 @@ module.exports = {
     entry: './src/app/index.js',
     output: {
       path: path.resolve(__dirname, './src/public_html/assets/js/'),
-      filename: 'bundle.js'
+      filename: 'bundle.js',
     },
     devServer: {
       open: true,
+      hot: true,
       compress: true,
-      port: 3000,
-      before: function(app) {
-        app.get('/', function(req, res) {
-          //res.json({ custom: 'response' });
-        });
-      }
+      port: 9000
     },
     plugins: [
+      new webpack.HotModuleReplacementPlugin(),
       new HtmlWebpackPlugin({
         title: 'Development',
-        template: path.resolve(__dirname,'./dist/index.html'),
-        inject: true
+        template: path.resolve(__dirname,'./dist/index.html')
       })
     ],
 }

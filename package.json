@@ -8,14 +8,14 @@
   },
   "main": "./src/app/index.js",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server",
     "dev-start": "webpack-dev-server — mode development — open — hot",
     "builddddd": "webpack — mode production",
     "dev-react": "webpack-dev-server --config wp.dev.config.js",
     "build-react": "webpack --config wp.prd.config.js",
     "build-server": "json-server -c ./jsonserver/json-server.json ./jsonserver/json-server-data.json",
     "jsonserver": "json-server -c ./jsonserver/json-server.json ./jsonserver/json-server-data.json",
-    "concurrently": "node concurrently.js",
+    "concurrently": "set NODE_ENV=production && node concurrently.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -48,9 +48,6 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^0.1.19",
     "concurrently": "^4.0.1",
